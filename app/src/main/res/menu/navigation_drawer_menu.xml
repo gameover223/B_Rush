@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="@string/dashboard" >
+
+        <menu>
+
+            <item
+                android:id="@+id/menuStatistic"
+                android:icon="@drawable/ic_chart"
+                android:title="Statistic"/>
+
+
+            <item
+                android:id="@+id/menuTicket"
+                android:icon="@drawable/ic_ticket"
+                android:title="Ticket"/>
+
+
+        </menu>
+
+    </item>
+
+    <item
+        android:id="@+id/menuBus"
+        android:icon="@drawable/ic_bus"
+        android:title="@string/book_bus" />
+</menu>
