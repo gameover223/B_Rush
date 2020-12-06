@@ -1,11 +1,14 @@
 package com.example.finalb_rushadmin;
 
+import android.app.Dialog;
 import android.content.Intent;
 import android.database.Cursor;
+import android.os.Build;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ImageView;
@@ -19,12 +22,13 @@ import androidx.fragment.app.Fragment;
 import java.util.ArrayList;
 
 public class DriverFragment extends Fragment {
-    private Button b1;
+    private Button b1, update, delete;
     private ImageView imgUp, imgDel;
     private ArrayList<String> listDriverName;
     private ArrayAdapter adapter;
     private DatabaseHelper databaseHelper;
     private ListView listView;
+    private Dialog dialog;
 
     @Nullable
     @Override
@@ -35,6 +39,15 @@ public class DriverFragment extends Fragment {
         listDriverName = new ArrayList<String>();
         listView = v.findViewById(R.id.listViewDrivers);
         viewData();
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                String text = (String) listView.getItemAtPosition(position);
+                Toast.makeText(getActivity(), ""+text, Toast.LENGTH_SHORT).show();
+                //Toast.makeText(getActivity(), "I am here", Toast.LENGTH_SHORT).show();
+            }
+        });
+
         b1 = v.findViewById(R.id.btnAddDriver);
         b1.setOnClickListener(new View.OnClickListener() {
             @Override
