@@ -181,11 +181,24 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     }
 
     //for reading the data in the DB
-    public Cursor getAllDriver()
+    public Cursor getListDriver()
     {
         SQLiteDatabase db = this.getWritableDatabase();
         Cursor res = db.rawQuery("SELECT * FROM "+TABLE_DRIVER, null);
         return res;
+    }
+    public Cursor getListUsers()
+    {
+        SQLiteDatabase db = this.getWritableDatabase();
+        Cursor res = db.rawQuery("SELECT * FROM "+TABLE_USER, null);
+        return res;
+    }
+    public Cursor getPerson(long personID)
+    {
+        SQLiteDatabase db = this.getWritableDatabase();
+        Cursor person = db.rawQuery("SELECT * FROM "+TABLE_PERSON+" WHERE "+COLUMN_ID+" = "+personID, null);
+        if(person != null){ person.moveToFirst(); }
+        return person;
     }
    /* public Cursor getAllData() {
         SQLiteDatabase db = this.getWritableDatabase();

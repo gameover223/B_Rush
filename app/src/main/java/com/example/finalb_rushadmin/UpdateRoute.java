@@ -20,11 +20,7 @@ public class UpdateRoute extends AppCompatActivity {
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinnerTime.setAdapter(adapter);
 
-        spinnerDriver = findViewById(R.id.updatedBusDriver);
-        String[] driverList = getResources().getStringArray(R.array.bus_driver);
-        ArrayAdapter adapterD = new ArrayAdapter(this, android.R.layout.simple_spinner_item, driverList);
-        adapterD.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        spinnerDriver.setAdapter(adapterD);
+
 
         spinnerBusNum = findViewById(R.id.updatedBusNumber);
         String[] busNum = getResources().getStringArray(R.array.bus_number);

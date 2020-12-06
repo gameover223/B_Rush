@@ -2,6 +2,8 @@ package com.example.finalb_rushadmin;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.widget.NestedScrollView;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -41,7 +43,12 @@ public class AddDriver extends AppCompatActivity {
             public void onClick(View v) {
                 boolean isInserted = databaseHelper.insertBusDriver(fname.getText().toString(), mname.getText().toString(), lname.getText().toString(),
                         add.getText().toString(), bday.getText().toString(), num.getText().toString());
-                if(isInserted){ Toast.makeText(AddDriver.this, "Data is inserted", Toast.LENGTH_SHORT).show(); }
+                if(isInserted){
+                    DriverFragment fragment = new DriverFragment();
+                    FragmentManager fragmentManager = getSupportFragmentManager();
+                    FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+                    fragmentTransaction.add(R.id.layout, fragment).addToBackStack(null).commit();
+                }
                 else { Toast.makeText(AddDriver.this, "Failed to insert data", Toast.LENGTH_SHORT).show();}
             }
         });

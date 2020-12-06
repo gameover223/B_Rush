@@ -58,7 +58,6 @@
         android:layout_height="30dp"
         android:orientation="vertical"
         android:background="@drawable/gcash_button"
-        android:backgroundTint=""
         android:translationX="75dp"
         android:translationY="300dp"
         >

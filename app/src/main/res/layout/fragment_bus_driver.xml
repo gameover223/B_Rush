@@ -1,75 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent" android:layout_height="match_parent"
-    android:background="@drawable/gradient_background">
-
-    <androidx.core.widget.NestedScrollView
-        android:id="@+id/nestedScrollView"
+    android:background="@drawable/gradient_background"
+    android:orientation="vertical" android:gravity="center_horizontal">
+    <TextView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:fillViewport="true">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:gravity="center_horizontal"
-                android:text="BUS DRIVERS"
-                android:textColor="#850808"
-                android:textSize="24sp"
-                android:textStyle="bold"
-                android:translationY="50dp" />
-
-            <TextView
-                android:id="@+id/displayDriver"
-                android:layout_width="350dp"
-                android:layout_height="50dp"
-                android:layout_gravity="center_horizontal"
-                android:background="@drawable/textbox_viewing"
-                android:gravity="center_vertical"
-                android:padding="5dp"
-                android:paddingStart="35dp"
-                android:text="Driver 1"
-                android:textSize="20sp"
-                android:textStyle="bold"
-                android:translationY="80dp" />
-
-            <ImageView
-                android:layout_width="35dp"
-                android:layout_height="35dp"
-                android:layout_marginLeft="285dp"
-                android:translationY="36dp"
-                android:src="@drawable/edit"
-                android:id="@+id/imgUpdateDriver" />
-
-            <ImageView
-                android:layout_width="35dp"
-                android:layout_height="35dp"
-                android:layout_marginLeft="328dp"
-                android:translationY="1dp"
-                android:src="@drawable/delete"
-                android:id="@+id/imgDeleteDriver"/>
-
-        </LinearLayout>
-    </androidx.core.widget.NestedScrollView>
-
-    <Button
-        android:id="@+id/btnAddDriver"
-        android:layout_width="275dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:layout_marginLeft="75dp"
-        android:paddingTop="8dp"
-        android:paddingBottom="8dp"
-        android:text="ADD DRIVER"
-        android:textSize="16sp"
-        android:translationY="520dp"
-        app:backgroundTint="#00B359" />
+        android:gravity="center_horizontal"
+        android:text="BUS DRIVERS"
+        android:textColor="#850808"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:translationY="10dp" />
 
-</RelativeLayout>
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:id="@+id/listViewDrivers"
+        android:layout_marginTop="15dp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btnAddDriver"
+            android:layout_width="275dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center_horizontal"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:text="ADD DRIVER"
+            android:textSize="16sp"
+            app:backgroundTint="#00B359" />
+    </LinearLayout>
+
+
+
+</LinearLayout>
