@@ -1,5 +1,6 @@
 package com.example.finalb_rushadmin;
 
+import android.app.AlertDialog;
 import android.app.Dialog;
 import android.content.Intent;
 import android.database.Cursor;
@@ -23,12 +24,12 @@ import java.util.ArrayList;
 
 public class DriverFragment extends Fragment {
     private Button b1, update, delete;
-    private ImageView imgUp, imgDel;
     private ArrayList<String> listDriverName;
     private ArrayAdapter adapter;
     private DatabaseHelper databaseHelper;
     private ListView listView;
     private Dialog dialog;
+    private String string;
 
     @Nullable
     @Override
@@ -36,15 +37,43 @@ public class DriverFragment extends Fragment {
         View v = inflater.inflate(R.layout.fragment_bus_driver, container, false);
         initializeDB();
 
+        dialog = new Dialog(getActivity());
+        dialog.setContentView(R.layout.dialog_box);
+        dialog.getWindow().setLayout(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT);
+        dialog.setCancelable(true);
+
+        update = (Button) dialog.findViewById(R.id.btnView);
+        update.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(), UpdateDriver.class);
+                Bundle bundle = new Bundle();
+                bundle.putString("Name", string);
+                intent.putExtras(bundle);
+                startActivity(intent);
+            }
+        });
+
+        delete = (Button) dialog.findViewById(R.id.btnDelete);
+        delete.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(), DeleteDriver.class);
+                Bundle bundle = new Bundle();
+                bundle.putString("Name", string);
+                intent.putExtras(bundle);
+                startActivity(intent);
+            }
+        });
+
         listDriverName = new ArrayList<String>();
         listView = v.findViewById(R.id.listViewDrivers);
         viewData();
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                String text = (String) listView.getItemAtPosition(position);
-                Toast.makeText(getActivity(), ""+text, Toast.LENGTH_SHORT).show();
-                //Toast.makeText(getActivity(), "I am here", Toast.LENGTH_SHORT).show();
+                string = (String) parent.getItemAtPosition(position);
+                dialog.show();
             }
         });
 
@@ -70,13 +99,15 @@ public class DriverFragment extends Fragment {
 
     public void viewData()
     {
-        Cursor cursor = databaseHelper.getListDriver();
+        Cursor cursor = databaseHelper.getListDrivers();
         if(cursor.getCount() == 0){ Toast.makeText(getActivity(), "Database is empty", Toast.LENGTH_SHORT).show(); }
         else{
             while(cursor.moveToNext()){
+                long ID = cursor.getLong(cursor.getColumnIndex("ID"));
+                String id = String.valueOf(ID);
                 long personID = cursor.getLong(cursor.getColumnIndex("PersonID"));
                 Cursor driver = databaseHelper.getPerson(personID);
-                String name = driver.getString(driver.getColumnIndex("FirstName"))+" "+driver.getString(driver.getColumnIndex("LastName"));
+                String name = id+"-"+driver.getString(driver.getColumnIndex("FirstName"))+" "+driver.getString(driver.getColumnIndex("LastName"));
                 listDriverName.add(name);
             }
             adapter = new ArrayAdapter(getActivity(), android.R.layout.simple_list_item_1, listDriverName);

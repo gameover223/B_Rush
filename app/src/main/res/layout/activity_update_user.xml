@@ -162,7 +162,7 @@
             android:translationY="130dp" />
 
         <EditText
-            android:id="@+id/updatedContactNum"
+            android:id="@+id/updatedUserContactNum"
             android:layout_width="350dp"
             android:layout_height="50dp"
             android:layout_gravity="center_horizontal"
@@ -181,7 +181,7 @@
             android:layout_height="match_parent"
             android:orientation="horizontal">
             <Button
-                android:id="@+id/button2"
+                android:id="@+id/cancelUserUpdate"
                 android:layout_width="150dp"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="50dp"

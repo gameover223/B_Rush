@@ -69,7 +69,7 @@
         android:layout_height="match_parent"
         android:orientation="horizontal">
         <Button
-            android:id="@+id/button5"
+            android:id="@+id/cancelDriverDelete"
             android:layout_width="150dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="50dp"
