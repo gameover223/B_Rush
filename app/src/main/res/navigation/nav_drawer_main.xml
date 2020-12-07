@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_drawer_main"
+    app:startDestination="@id/menuStatistic">
+
+    <fragment
+        android:id="@+id/menuStatistic"
+        android:name="com.team_brush.b_rush.fragments.Dashboard.StatisticFragment"
+        android:label="Statistic"
+        tools:layout="@layout/fragment_statistic" />
+    <fragment
+        android:id="@+id/menuTicket"
+        android:name="com.team_brush.b_rush.fragments.Dashboard.TicketFragment"
+        android:label="Ticket"
+        tools:layout="@layout/fragment_ticket" />
+    <fragment
+        android:id="@+id/menuBus"
+        android:name="com.team_brush.b_rush.fragments.Home.BusFragment"
+        android:label="Bus List"
+        tools:layout="@layout/fragment_bus" />
+
+</navigation>
