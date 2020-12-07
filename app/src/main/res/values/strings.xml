@@ -1,8 +1,9 @@
 <resources>
-    <string name="app_name">Final B-rush Admin</string>
-
-    <string name="open_navbar">Open Navigation Bar</string>
-    <string name="close_navbar">Close Navigation Bar</string>
+    <string name="app_name">B-RUSH</string>
+    <string name="openNavDrawer">Navigation Drawer Open</string>
+    <string name="closeNavDrawer">Navigation Drawer Close</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="book_bus">Book Bus</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="admin_dashboard">admin dashboard</string>
@@ -11,4 +12,5 @@
     <string name="Admin_Dashboard">Admin Dashboard</string>
     <string name="Overview">Overview</string>
     <string name="route_1">Route 1</string>
+    <string name="title_activity_map">Map</string>
 </resources>
