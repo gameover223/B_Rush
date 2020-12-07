@@ -20,157 +20,187 @@
         android:src="@drawable/ic_arrow"
         android:elevation="4dp"/>
 
-    <TextView
-        android:id="@+id/textView6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:gravity="center_horizontal"
-        android:text="Update User"
-        android:textColor="#000000"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        android:translationY="53dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
-    <EditText
-        android:id="@+id/updatedUserFName"
-        android:layout_width="350dp"
-        android:layout_height="50dp"
-        android:layout_gravity="center_horizontal"
-        android:background="@drawable/input_textbox"
-        android:ems="10"
-        android:hint="Enter First Name"
-        android:inputType="textPersonName"
-        android:padding="5sp"
-        android:paddingStart="20sp"
-        android:textSize="16sp"
-        android:translationY="120dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:text="Add New Bus Driver"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:translationY="50dp" />
 
-    <EditText
-        android:id="@+id/updatedUserLName"
-        android:layout_width="350dp"
-        android:layout_height="50dp"
-        android:layout_gravity="center_horizontal"
-        android:background="@drawable/input_textbox"
-        android:ems="10"
-        android:hint="Enter Last Name"
-        android:inputType="textPersonName"
-        android:padding="5sp"
-        android:paddingStart="20sp"
-        android:textSize="16sp"
-        android:translationY="210dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:text="First Name"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:translationY="55dp" />
 
-    <EditText
-        android:id="@+id/updatedUserAddress"
-        android:layout_width="350dp"
-        android:layout_height="50dp"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="80dp"
-        android:background="@drawable/input_textbox"
-        android:ems="10"
-        android:hint="Enter Address"
-        android:inputType="textPersonName"
-        android:padding="5sp"
-        android:paddingStart="20sp"
-        android:textSize="16sp"
-        android:translationY="220dp"  />
+        <EditText
+            android:id="@+id/updatedUserFName"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/input_textbox"
+            android:ems="10"
+            android:hint="Enter First Name"
+            android:inputType="textPersonName"
+            android:padding="5sp"
+            android:paddingStart="20sp"
+            android:textSize="16sp"
+            android:translationY="60dp" />
 
-    <EditText
-        android:id="@+id/updatedUserBday"
-        android:layout_width="350dp"
-        android:layout_height="50dp"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="160dp"
-        android:background="@drawable/input_textbox"
-        android:ems="10"
-        android:hint="Enter Birthday"
-        android:inputType="date"
-        android:padding="5sp"
-        android:paddingStart="20sp"
-        android:textSize="16sp"
-        android:translationY="230dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:text="Middle Name"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:translationY="70dp" />
 
-    <EditText
-        android:id="@+id/updatedContactNum"
-        android:layout_width="350dp"
-        android:layout_height="50dp"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="240dp"
-        android:background="@drawable/input_textbox"
-        android:ems="10"
-        android:hint="Enter Contact Number"
-        android:inputType="number"
-        android:padding="5sp"
-        android:paddingStart="20sp"
-        android:textSize="16sp"
-        android:translationY="240dp" />
+        <EditText
+            android:id="@+id/updatedUserMName"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/input_textbox"
+            android:ems="10"
+            android:hint="Enter Middle Name (optional)"
+            android:inputType="textPersonName"
+            android:padding="5sp"
+            android:paddingStart="20sp"
+            android:textSize="16sp"
+            android:translationY="75dp" />
 
-    <Button
-        android:id="@+id/updateUser"
-        android:layout_width="275dp"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:paddingTop="8dp"
-        android:paddingBottom="8dp"
-        android:text="UPDATE"
-        android:translationY="545dp"
-        app:backgroundTint="#EC7823" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:text="Last Name"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:translationY="85dp" />
 
-    <Button
-        android:id="@+id/button9"
-        android:layout_width="275dp"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="50dp"
-        android:paddingTop="8dp"
-        android:paddingBottom="8dp"
-        android:text="CANCEL"
-        android:translationY="545dp"
-        app:backgroundTint="#EC7823" />
+        <EditText
+            android:id="@+id/updatedUserLName"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/input_textbox"
+            android:ems="10"
+            android:hint="Enter Last Name"
+            android:inputType="textPersonName"
+            android:padding="5sp"
+            android:paddingStart="20sp"
+            android:textSize="16sp"
+            android:translationY="90dp" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="40dp"
-        android:text="First Name"
-        android:textColor="#000000"
-        android:textSize="16sp"
-        android:translationY="90dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:text="Address"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:translationY="100dp" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="40dp"
-        android:text="Last Name"
-        android:textColor="#000000"
-        android:textSize="16sp"
-        android:translationY="180dp" />
+        <EditText
+            android:id="@+id/updatedUserAddress"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/input_textbox"
+            android:ems="10"
+            android:hint="Enter Address"
+            android:inputType="textPersonName"
+            android:padding="5sp"
+            android:paddingStart="20sp"
+            android:textSize="16sp"
+            android:translationY="105dp" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="40dp"
-        android:text="Address"
-        android:textColor="#000000"
-        android:textSize="16sp"
-        android:translationY="270dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:text="Birthdate"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:translationY="115dp" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="40dp"
-        android:text="Birthdate"
-        android:textColor="#000000"
-        android:textSize="16sp"
-        android:translationY="360dp" />
+        <EditText
+            android:id="@+id/updatedUserBday"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/input_textbox"
+            android:ems="10"
+            android:hint="Enter Birthday"
+            android:inputType="date"
+            android:padding="5sp"
+            android:paddingStart="20sp"
+            android:textSize="16sp"
+            android:translationY="120dp" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="40dp"
-        android:text="Contact Number"
-        android:textColor="#000000"
-        android:textSize="16sp"
-        android:translationY="450dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:elevation="4dp"
+            android:text="Contact Number"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:translationY="130dp" />
 
+        <EditText
+            android:id="@+id/updatedUserContactNum"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/input_textbox"
+            android:elevation="4dp"
+            android:ems="10"
+            android:hint="Enter Contact Number"
+            android:inputType="number"
+            android:padding="5sp"
+            android:paddingStart="20sp"
+            android:textSize="16sp"
+            android:translationY="135dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/cancelUserUpdate"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:text="CANCEL"
+                android:translationY="145dp"
+                app:backgroundTint="#EC7823" />
+
+            <Button
+                android:id="@+id/updateUser"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:text="UPDATE"
+                android:translationY="145dp"
+                app:backgroundTint="#EC7823" />
+        </LinearLayout>
+    </LinearLayout>
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

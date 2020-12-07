@@ -64,27 +64,29 @@
         android:textSize="16sp"
         android:translationY="220dp" />
 
-    <Button
-        android:id="@+id/deleteUser"
-        android:layout_width="275dp"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:paddingTop="8dp"
-        android:paddingBottom="8dp"
-        android:text="SUBMIT"
-        android:translationY="400dp"
-        app:backgroundTint="#EC7823" />
-
-    <Button
-        android:id="@+id/button6"
-        android:layout_width="275dp"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="50dp"
-        android:paddingTop="8dp"
-        android:paddingBottom="8dp"
-        android:text="CANCEL"
-        android:translationY="400dp"
-        app:backgroundTint="#EC7823" />
-
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/button6"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:text="CANCEL"
+            android:translationY="400dp"
+            app:backgroundTint="#EC7823" />
+        <Button
+            android:id="@+id/deleteUser"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:text="SUBMIT"
+            android:translationY="400dp"
+            app:backgroundTint="#EC7823" />
+    </LinearLayout>
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

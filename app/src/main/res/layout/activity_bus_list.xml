@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/gradient_red_base_background"
+        android:orientation="horizontal"></LinearLayout>
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="128dp"
+        android:background="@drawable/custom_appbar"
+        app:liftOnScroll="true">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textAlignment="center"
+            app:collapsedTitleTextAppearance="@style/TextAppearance.App.CollapsingToolbar.Collapsed"
+            app:expandedTitleMarginBottom="28dp"
+            app:expandedTitleMarginStart="160dp"
+            app:expandedTitleTextAppearance="@style/TextAppearance.App.CollapsingToolbar.Expanded"
+            app:title="Bus List">
+
+            <com.google.android.material.appbar.MaterialToolbar
+                android:id="@+id/topAppBar"
+                style="@style/Widget.MaterialComponents.Toolbar.Primary"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@drawable/gradient_red_background"
+                android:elevation="0dp"
+                app:navigationIcon="@drawable/ic_menu" />
+
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:translationY="130dp">
+
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/nestedScrollView"
+            android:layout_width="match_parent"
+            android:layout_height="601dp"
+            android:layout_marginBottom="0dp"
+            android:background="@drawable/custom_view_background"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        </androidx.core.widget.NestedScrollView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:background="@drawable/search_whitecircle"
+        android:backgroundTint="@color/white"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:translationX="50dp"
+        android:translationY="150dp">
+
+        <EditText
+            android:id="@+id/searchBar2"
+            android:layout_width="250dp"
+            android:layout_height="match_parent"
+            android:backgroundTint="@color/white"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="Search" />
+
+        <ImageButton
+            android:onClick="showMicPop"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:backgroundTint="#004F5254"
+            app:srcCompat="@drawable/ic_baseline_mic_24"
+            tools:ignore="VectorDrawableCompat" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:orientation="vertical"
+        android:translationX="50dp"
+        android:translationY="225dp">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Time: 5:45 pm"
+            android:textAlignment="textStart"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:orientation="vertical"
+        android:translationX="50dp"
+        android:translationY="275dp">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Destination: Minglanilla"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:orientation="vertical"
+        android:translationX="50dp"
+        android:translationY="350dp">
+
+        <Button
+            android:onClick="showBusList"
+            android:id="@+id/bus1"
+            android:drawableLeft="@drawable/ic_baseline_directions_busw_24"
+            android:drawableRight="@drawable/ic_baseline_info_24"
+            android:textAlignment="textStart"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/edit_text_white_box"
+            android:clickable="true"
+            android:text="Bus-001" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:orientation="vertical"
+        android:translationX="50dp"
+        android:translationY="420dp">
+
+        <Button
+            android:onClick="showBusList"
+            android:id="@+id/bus2"
+            android:drawableLeft="@drawable/ic_baseline_directions_busw_24"
+            android:drawableRight="@drawable/ic_baseline_info_24"
+            android:textAlignment="textStart"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/edit_text_white_box"
+            android:clickable="true"
+            android:text="Bus-002" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:orientation="vertical"
+        android:translationX="50dp"
+        android:translationY="490dp">
+
+        <Button
+            android:onClick="showBusList"
+            android:id="@+id/bus3"
+            android:drawableLeft="@drawable/ic_baseline_directions_busw_24"
+            android:drawableRight="@drawable/ic_baseline_info_24"
+            android:textAlignment="textStart"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/edit_text_white_box"
+            android:clickable="true"
+            android:text="Bus-003" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:orientation="vertical"
+        android:translationX="50dp"
+        android:translationY="560dp">
+
+        <Button
+            android:onClick="showBusList"
+            android:id="@+id/bus4"
+            android:drawableLeft="@drawable/ic_baseline_directions_busw_24"
+            android:drawableRight="@drawable/ic_baseline_info_24"
+            android:textAlignment="textStart"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/edit_text_white_box"
+            android:clickable="true"
+            android:text="Bus-004" />
+    </LinearLayout>
+</RelativeLayout>

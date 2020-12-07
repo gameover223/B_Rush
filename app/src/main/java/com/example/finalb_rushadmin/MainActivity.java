@@ -7,6 +7,7 @@ import androidx.appcompat.widget.Toolbar;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 
+import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.view.MenuItem;
 
@@ -38,6 +39,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                     new DashboardFragment()).commit();
             navigationView.setCheckedItem(R.id.nav_route);
         }
+
     }
 
     @Override

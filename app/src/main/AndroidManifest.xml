@@ -9,15 +9,34 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.FinalBrushAdmin">
-        <activity android:name=".DeleteUser" android:theme="@style/Theme.FinalBrushAdmin.NoActionBar"></activity>
-        <activity android:name=".DeleteDriver" android:theme="@style/Theme.FinalBrushAdmin.NoActionBar"/>
-        <activity android:name=".DeleteRoute" android:theme="@style/Theme.FinalBrushAdmin.NoActionBar"/>
-        <activity android:name=".UpdateUser" android:theme="@style/Theme.FinalBrushAdmin.NoActionBar"/>
-        <activity android:name=".UpdateDriver" android:theme="@style/Theme.FinalBrushAdmin.NoActionBar"/>
-        <activity android:name=".UpdateRoute" android:theme="@style/Theme.FinalBrushAdmin.NoActionBar"/>
-        <activity android:name=".AddUser" android:theme="@style/Theme.FinalBrushAdmin.NoActionBar"/>
-        <activity android:name=".AddDriver" android:theme="@style/Theme.FinalBrushAdmin.NoActionBar"/>
-        <activity android:name=".AddRoute" android:theme="@style/Theme.FinalBrushAdmin.NoActionBar"/>
+        <activity android:name=".AddUser2" android:theme="@style/Theme.FinalBrushAdmin.NoActionBar"/>
+        <activity
+            android:name=".DeleteUser"
+            android:theme="@style/Theme.FinalBrushAdmin.NoActionBar" />
+        <activity
+            android:name=".DeleteDriver"
+            android:theme="@style/Theme.FinalBrushAdmin.NoActionBar" />
+        <activity
+            android:name=".DeleteRoute"
+            android:theme="@style/Theme.FinalBrushAdmin.NoActionBar" />
+        <activity
+            android:name=".UpdateUser"
+            android:theme="@style/Theme.FinalBrushAdmin.NoActionBar" />
+        <activity
+            android:name=".UpdateDriver"
+            android:theme="@style/Theme.FinalBrushAdmin.NoActionBar" />
+        <activity
+            android:name=".UpdateRoute"
+            android:theme="@style/Theme.FinalBrushAdmin.NoActionBar" />
+        <activity
+            android:name=".AddUser"
+            android:theme="@style/Theme.FinalBrushAdmin.NoActionBar" />
+        <activity
+            android:name=".AddDriver"
+            android:theme="@style/Theme.FinalBrushAdmin.NoActionBar" />
+        <activity
+            android:name=".AddRoute"
+            android:theme="@style/Theme.FinalBrushAdmin.NoActionBar" />
         <activity
             android:name=".MainActivity"
             android:theme="@style/Theme.FinalBrushAdmin.NoActionBar">

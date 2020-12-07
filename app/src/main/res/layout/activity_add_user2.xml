@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
+    tools:context=".AddUser2">
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="412dp"
+        android:layout_height="45dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        android:background="@drawable/header"
+        android:elevation="4dp" >
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="23dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="13dp"
+            android:layout_marginTop="9dp"
+            android:src="@drawable/ic_arrow" />
+    </androidx.appcompat.widget.Toolbar>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:text="Add New User"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:translationY="53dp"
+        android:translationX="112dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:text="Address"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:translationY="100dp"
+        android:translationX="5dp"/>
+    <EditText
+        android:id="@+id/getUserAddress"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/input_textbox"
+        android:ems="10"
+        android:hint="Enter Address"
+        android:inputType="textPersonName"
+        android:padding="5sp"
+        android:paddingStart="20sp"
+        android:textSize="16sp"
+        android:translationY="130dp"
+        android:translationX="30dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:text="Birthday"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:translationY="200dp"
+        android:translationX="5dp"/>
+    <EditText
+        android:id="@+id/getUserBday"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/input_textbox"
+        android:ems="10"
+        android:hint="DD/MM/YYYY"
+        android:inputType="date"
+        android:padding="5sp"
+        android:paddingStart="20sp"
+        android:textSize="16sp"
+        android:translationY="230dp"
+        android:translationX="30dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:text="Contact Number"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:translationY="300dp"
+        android:translationX="5dp"/>
+
+    <EditText
+        android:id="@+id/getUserNum"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/input_textbox"
+        android:ems="10"
+        android:hint="Enter Contact Number"
+        android:maxLength="11"
+        android:inputType="number"
+        android:padding="5sp"
+        android:paddingStart="20sp"
+        android:textSize="16sp"
+        android:translationY="330dp"
+        android:translationX="30dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:text="CANCEL"
+            android:translationY="420dp"
+            app:backgroundTint="#EC7823" />
+        <Button
+            android:id="@+id/addUser"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:text="ADD"
+            android:translationY="420dp"
+            app:backgroundTint="#EC7823" />
+    </LinearLayout>
+</RelativeLayout>
