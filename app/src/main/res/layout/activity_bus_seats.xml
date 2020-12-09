@@ -80,6 +80,7 @@
 
         <ImageButton
             android:background="@drawable/seats"
+            android:onClick="selectSeatPop"
             android:id="@+id/imageView3"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -123,7 +124,7 @@
                 android:id="@+id/priceView"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:text="50 PHP"
+                android:text="25 PHP"
                 android:textColor="@color/black"
                 android:textSize="24dp"
                 android:textStyle="italic" />
@@ -171,7 +172,6 @@
             android:translationY="75dp">
 
             <Button
-                android:onClick="showCashPop"
                 android:clickable="true"
                 android:layout_width="300dp"
                 android:layout_height="50dp"
