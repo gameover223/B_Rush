@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
+import android.app.AlertDialog;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -44,9 +45,17 @@ public class AddUser2 extends AppCompatActivity {
 
                 boolean isInserted = databaseHelper.insertUser(Fname, Mname, Lname, add.getText().toString(), bday.getText().toString(),
                         num.getText().toString(), Username, Pass);
-                if(isInserted) { Toast.makeText(AddUser2.this, "Failed to insert data", Toast.LENGTH_SHORT).show(); }
-                else { Toast.makeText(AddUser2.this, "Failed to insert data", Toast.LENGTH_SHORT).show(); }
+                if(isInserted) { String str = "Data has been added"; showMessage(str); }
+                else { String str = "Failed to add data"; showMessage(str); }
             }
         });
+    }
+
+    private void showMessage(String message) {
+        AlertDialog.Builder alert = new AlertDialog.Builder(AddUser2.this);
+        alert.setCancelable(true);
+        alert.setTitle("Is Data Added?");
+        alert.setMessage(message);
+        alert.show();
     }
 }
