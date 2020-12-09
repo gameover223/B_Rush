@@ -172,7 +172,7 @@
             android:textColor="@color/black"
             android:textSize="25dp"
             android:textStyle="italic"
-            android:text="50" />
+            android:text="47" />
     </LinearLayout>
 
     <Button
