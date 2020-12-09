@@ -9,17 +9,19 @@ import android.os.Bundle;
 import android.view.View;
 
 public class BusSeats extends AppCompatActivity {
-    Dialog gCashDialog;
+    Dialog selectSeatPop;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_bus_seats);
-        gCashDialog = new Dialog(this);
+
+        selectSeatPop = new Dialog(this);
     }
 
-    public void showCashPop(View v){
-        gCashDialog.setContentView(R.layout.activity_g_cash_pop);
-        gCashDialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
-        gCashDialog.show();
+
+    public void selectSeatPop(View v){
+        selectSeatPop.setContentView(R.layout.activity_seat_selection);
+        selectSeatPop.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+        selectSeatPop.show();
     }
 }
