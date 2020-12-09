@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Gcash1">
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.google.android.material.appbar.AppBarLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#FFFFFF"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#ECECEC"
+                    android:orientation="vertical">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="79dp"
+                        app:cardBackgroundColor="#781616">
+
+                        <ImageButton
+                            android:id="@+id/backButton3"
+                            android:layout_width="58dp"
+                            android:layout_height="match_parent"
+                            android:background="#781616"
+                            android:outlineAmbientShadowColor="@color/black"
+                            android:scaleX="1.5"
+                            android:scaleY="1.5"
+                            android:visibility="visible"
+                            app:srcCompat="@drawable/abc_vector_test"
+                            tools:visibility="visible" />
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="169dp"
+                        app:cardBackgroundColor="#1E6CBD">
+
+                        <ImageView
+                            android:id="@+id/imageView2"
+                            android:layout_width="match_parent"
+                            android:layout_height="132dp"
+                            android:background="#1E6CBD"
+                            android:scaleType="fitStart"
+                            android:scaleX=".50"
+                            android:scaleY=".50"
+                            app:srcCompat="@drawable/gcash3" />
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/card_view_outer"
+                        android:layout_width="359dp"
+                        android:layout_height="484dp"
+                        android:layout_gravity="center"
+                        android:translationY="-50dp"
+                        app:cardBackgroundColor="@android:color/transparent"
+                        app:cardCornerRadius="0dp"
+                        app:cardElevation="50dp">
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/card_view_inner"
+                            android:layout_width="357dp"
+                            android:layout_height="458dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="3dp"
+                            app:cardBackgroundColor="#ECECEC"
+                            app:cardCornerRadius="50dp"
+                            app:cardElevation="0dp">
+
+                            <EditText
+                                android:id="@+id/MPIN"
+                                android:layout_width="112dp"
+                                android:layout_height="50dp"
+                                android:ems="10"
+                                android:gravity="center"
+                                android:hint="X X X X "
+                                android:inputType="number"
+                                android:lineSpacingExtra="36sp"
+                                android:textAllCaps="true"
+                                android:textColor="#020202"
+                                android:textColorHint="#A8A8A8"
+                                android:textColorLink="#ECECEC"
+                                android:textSize="24sp"
+                                android:translationX="120dp"
+                                android:translationY="225dp" />
+
+                            <TextView
+                                android:id="@+id/editTextTextPersonName"
+                                android:layout_width="115dp"
+                                android:layout_height="61dp"
+                                android:ems="10"
+                                android:gravity="center|start"
+                                android:inputType="textPersonName"
+                                android:text="Merchant:"
+                                android:textColor="#918888"
+                                android:textColorHint="#ECECEC"
+                                android:textColorLink="#ECECEC"
+                                android:textSize="18sp"
+                                android:translationX="30dp"
+                                android:translationY="30dp" />
+
+                            <TextView
+                                android:id="@+id/editTextTextPersonName2"
+                                android:layout_width="115dp"
+                                android:layout_height="61dp"
+                                android:ems="10"
+                                android:gravity="center|start"
+                                android:inputType="textPersonName"
+                                android:text="Amount:"
+                                android:textColor="#918888"
+                                android:textColorHint="#ECECEC"
+                                android:textSize="18sp"
+                                android:translationX="30dp"
+                                android:translationY="60dp" />
+
+                            <TextView
+                                android:id="@+id/editTextTextPersonName3"
+                                android:layout_width="305dp"
+                                android:layout_height="61dp"
+                                android:ems="10"
+                                android:gravity="center"
+                                android:inputType="textPersonName"
+                                android:text="Pay with GCash"
+                                android:textColor="#000000"
+                                android:textColorHint="#ECECEC"
+                                android:textSize="30sp"
+                                android:textStyle="bold"
+                                android:translationX="30dp"
+                                android:translationY="150dp" />
+
+                            <TextView
+                                android:id="@+id/textvier2"
+                                android:layout_width="242dp"
+                                android:layout_height="61dp"
+                                android:ems="10"
+                                android:gravity="center|start"
+                                android:inputType="textPersonName"
+                                android:text=" Enter Your 4 digit MPIN "
+                                android:textColor="#777373"
+                                android:textColorHint="#ECECEC"
+                                android:textColorLink="#ECECEC"
+                                android:textSize="18sp"
+                                android:translationX="80dp"
+                                android:translationY="180dp" />
+
+
+                            <TextView
+                                android:id="@+id/editTextNumberDecimal"
+                                android:layout_width="131dp"
+                                android:layout_height="61dp"
+                                android:ems="10"
+                                android:gravity="center|start"
+                                android:inputType="numberDecimal"
+                                android:text="XXXXX.XXX"
+                                android:textColor="#918888"
+                                android:textColorHint="#ECECEC"
+                                android:textColorLink="#ECECEC"
+                                android:textSize="18sp"
+                                android:translationX="200dp"
+                                android:translationY="30dp" />
+
+                            <TextView
+                                android:id="@+id/editTextNumberDecimal2"
+                                android:layout_width="131dp"
+                                android:layout_height="61dp"
+                                android:ems="10"
+                                android:gravity="center|start"
+                                android:inputType="numberDecimal"
+                                android:text="PHP XXXX"
+                                android:textColor="#4377DD"
+                                android:textColorHint="#ECECEC"
+                                android:textSize="18sp"
+                                android:translationX="200dp"
+                                android:translationY="60dp" />
+
+                            <Button
+                                android:id="@+id/submitMPIN"
+                                android:layout_width="289dp"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/gcash_button"
+                                android:gravity="center"
+                                android:text="Submit"
+                                android:textColor="#FFFFFF"
+                                android:textColorHint="#FFFFFF"
+                                android:textColorLink="#FFFFFF"
+                                android:textSize="30sp"
+                                android:translationX="30dp"
+                                android:translationY="350dp"
+                                app:backgroundTint="#1E6CBD" />
+
+                        </androidx.cardview.widget.CardView>
+                    </androidx.cardview.widget.CardView>
+
+
+                </LinearLayout>
+
+            </com.google.android.material.appbar.AppBarLayout>
+
+            <!-- <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="149dp"
+                android:background="#1E6CBD"
+                app:srcCompat="@drawable/gcash3" />
+-->
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

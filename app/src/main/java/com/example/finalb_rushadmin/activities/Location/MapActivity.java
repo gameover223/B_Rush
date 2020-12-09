@@ -1,4 +1,4 @@
-package com.team_brush.b_rush.activities.Location;
+package com.example.finalb_rushadmin.activities.Location;
 
 import androidx.fragment.app.FragmentActivity;
 
